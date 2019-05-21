@@ -72,7 +72,7 @@
 		    if ( navbar.is(':visible')) {
 		    	navbar.removeClass('in');
 		    	navbar.attr('aria-expanded', 'false');
-		    	$('.js-fh5co-nav-toggle').removeClass('active');
+		    	$('.js-zsh-nav-toggle').removeClass('active');
 		    }
 
 		    event.preventDefault();
@@ -122,16 +122,16 @@
 
 		$(window).scroll(function(event){
 
-		   	var header = $('#fh5co-header'),
+		   	var header = $('#zsh-header'),
 				scrlTop = $(this).scrollTop();
 
 			if ( scrlTop > 500 && scrlTop <= 2000 ) {
-				header.addClass('navbar-fixed-top fh5co-animated slideInDown');
+				header.addClass('navbar-fixed-top zsh-animated slideInDown');
 			} else if ( scrlTop <= 500) {
 				if ( header.hasClass('navbar-fixed-top') ) {
-					header.addClass('navbar-fixed-top fh5co-animated slideOutUp');
+					header.addClass('navbar-fixed-top zsh-animated slideOutUp');
 					setTimeout(function(){
-						header.removeClass('navbar-fixed-top fh5co-animated slideInDown slideOutUp');
+						header.removeClass('navbar-fixed-top zsh-animated slideInDown slideOutUp');
 					}, 100 );
 				}
 			} 
@@ -143,15 +143,15 @@
 	// Animations
 	// Home
 	var homeAnimate = function() {
-		if ( $('#fh5co-home').length > 0 ) {	
+		if ( $('#zsh-home').length > 0 ) {	
 
-			$('#fh5co-home').waypoint( function( direction ) {
+			$('#zsh-home').waypoint( function( direction ) {
 										
 				if( direction === 'down' && !$(this.element).hasClass('animated') ) {
 
 
 					setTimeout(function() {
-						$('#fh5co-home .to-animate').each(function( k ) {
+						$('#zsh-home .to-animate').each(function( k ) {
 							var el = $(this);
 							
 							setTimeout ( function () {
@@ -172,7 +172,7 @@
 
 	var exploreAnimate = function() {
 
-		var explore = $('#fh5co-explore');
+		var explore = $('#zsh-explore');
 		if ( explore.length > 0 ) {	
 
 			explore.waypoint( function( direction ) {
@@ -264,7 +264,7 @@
 
 
 	var pricingAnimate = function() {
-		var pricing = $('#fh5co-pricing');
+		var pricing = $('#zsh-pricing');
 		if ( pricing.length > 0 ) {	
 
 			pricing.waypoint( function( direction ) {
@@ -305,7 +305,7 @@
 
 
 	var servicesAnimate = function() {
-		var services = $('#fh5co-services');
+		var services = $('#zsh-services');
 		if ( services.length > 0 ) {	
 
 			services.waypoint( function( direction ) {
@@ -349,7 +349,7 @@
 
 
 	var teamAnimate = function() {
-		var team = $('#fh5co-team');
+		var team = $('#zsh-team');
 		if ( team.length > 0 ) {	
 
 			team.waypoint( function( direction ) {
@@ -392,7 +392,7 @@
 
 
 	var footerAnimate = function() {
-		var footer = $('#fh5co-footer');
+		var footer = $('#zsh-footer');
 		if ( footer.length > 0 ) {	
 
 			footer.waypoint( function( direction ) {
@@ -429,8 +429,8 @@
 	};
 
 	var counterWayPoint = function() {
-		if ($('#fh5co-counter-section').length > 0 ) {
-			$('#fh5co-counter-section').waypoint( function( direction ) {
+		if ($('#zsh-counter-section').length > 0 ) {
+			$('#zsh-counter-section').waypoint( function( direction ) {
 										
 				if( direction === 'down' && !$(this.element).hasClass('animated') ) {
 					setTimeout( counter , 400);					

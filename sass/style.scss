@@ -66,7 +66,7 @@ $form-group-margin-bottom:       30px !default;
 	-moz-flex-wrap: wrap; 
 }
 
-@mixin fh5co-gradient() {
+@mixin zsh-gradient() {
 	// Gradient
 		background-color: $brand-primary;
 		/* IE9, iOS 3.2+ */
@@ -171,7 +171,7 @@ h1, h2, h3, h4, h5, h6 {
 	border: none !important;
 }
 
-#fh5co-header {
+#zsh-header {
 	position: absolute;
 	z-index: 999999;
 	width: 100%;
@@ -344,7 +344,7 @@ h1, h2, h3, h4, h5, h6 {
 
 }
 
-#fh5co-home {
+#zsh-home {
 	background-color: transparent;
 	background-size: cover;
 	// background-attachment: fixed;
@@ -411,27 +411,27 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-#fh5co-services, 
-#fh5co-explore, 
-#fh5co-team, 
-#fh5co-footer,
-#fh5co-work, 
-#fh5co-counters,
-#fh5co-pricing{
+#zsh-services, 
+#zsh-explore, 
+#zsh-team, 
+#zsh-footer,
+#zsh-work, 
+#zsh-counters,
+#zsh-pricing{
 	padding: 8em 0;
 	@media screen and (max-width: $screen-sm) {
 		padding: 3em 0;
 	}
 }
-#fh5co-services{
+#zsh-services{
 	padding-bottom: 0;
 }
 
-.fh5co-explore{
+.zsh-explore{
 	padding-bottom: 40px;
 }
 
-.fh5co-project{
+.zsh-project{
 	.project-grid{
 		width: 100%;
 		height: 800px;
@@ -540,7 +540,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 
-#fh5co-pricing {
+#zsh-pricing {
 	.price-box {
 	    border: 2px solid rgba($brand-white,.1);
 	    text-align: center;
@@ -633,7 +633,7 @@ h1, h2, h3, h4, h5, h6 {
 					color: $brand-primary;
 					font-size: 28px;
 				}
-				.fh5co-post{
+				.zsh-post{
 					padding-left: 50px;
 				}
 			}
@@ -641,7 +641,7 @@ h1, h2, h3, h4, h5, h6 {
 	}
 }
 // Counters
-.fh5co-counters {
+.zsh-counters {
 	padding: 3em 0;
 	background-size: cover;
 	background-attachment: fixed;
@@ -649,7 +649,7 @@ h1, h2, h3, h4, h5, h6 {
 	.counter-wrap{
 		border: 1px solid red !important;
 	}
-	.fh5co-counter {
+	.zsh-counter {
 		font-size: 30px;
 		display: block;
 		color: rgba($brand-white,1);
@@ -658,7 +658,7 @@ h1, h2, h3, h4, h5, h6 {
 		font-weight: 400;
 		margin-bottom: .3em;
 	}
-	.fh5co-counter-label {
+	.zsh-counter-label {
 		color: rgba($brand-white,.5);
 		text-transform: uppercase;
 		font-size: 12px;
@@ -671,7 +671,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
-#fh5co-team{
+#zsh-team{
 	// background: #f1faff;
 
 	.team-box{
@@ -778,7 +778,7 @@ h1, h2, h3, h4, h5, h6 {
 	}
 }
 
-#fh5co-footer{
+#zsh-footer{
 	color: rgba($brand-white,.6);
 	a{
 		color: rgba($brand-white,.6);
@@ -1048,7 +1048,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 // Menu bar Animate
-.fh5co-animated {
+.zsh-animated {
   -webkit-animation-duration: .3s;
   animation-duration: .3s;
   -webkit-animation-fill-mode: both;
